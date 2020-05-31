@@ -1,13 +1,7 @@
 
-
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
-}
-
-.main_content {
-    max-width: 840px;
-    margin: 0 auto;
 }
 
 a {
@@ -18,26 +12,23 @@ a {
 ul {
     padding: 0;
 }
+
 /* グローバルメニュー */
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    min-width: 1000px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
 .nri_logo {
     padding-top: 5px;
     padding-left: 20px;
-}
-
-header {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 60px;
-    margin: 0;
-    background-color: #ffffff;
 }
 
 .top_navi > div {
@@ -90,6 +81,10 @@ header {
     box-sizing: border-box;
 }
 
+.humberger:hover {
+    opacity: 0.5;
+}
+
 .humberger div {
     position: absolute;
     height: 2px;
@@ -110,10 +105,6 @@ header {
     bottom: 0;
 }
 
-.humberger:hover {
-    opacity: 0.5;
-}
-
 .topicpath {
     margin-top: 0;
     margin-bottom: 20px;
@@ -125,16 +116,6 @@ header {
 }
 
 /* ドロップダウンメニュー */
-.mega_menu {
-    display: flex;
-    visibility: hidden;
-    opacity: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-}
-
 .insite_contents, .news_contetns, .companyinfo_contents, .sustainable_contents {
     height: 260px;
 }
@@ -167,10 +148,17 @@ header {
     background-image: url(../css/images/stock_contents.jpg);
 }
 
-div.mega_menu {
+.mega_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 60px;
     left: 0;
+    visibility: hidden;
+    width: 100%;
+    background-position: center;
+    opacity: 0;
     transition: all .1s linear;
 }
 
@@ -198,12 +186,6 @@ div.mega_menu {
     transition: 0.5s;
 }
 
-.block a:before {
-    padding: 10px;
-    color: #8b8a8a;
-    content: ">";
-}
-
 .mega_menu_container .row_1 {
     height: 70px;
     margin-bottom: 90px;
@@ -228,6 +210,12 @@ a.mega_menu_container_first {
 .block a {
     display: block;
     line-height: 70px;
+}
+
+.block a:before {
+    padding: 10px;
+    color: #8b8a8a;
+    content: ">";
 }
 
 .child_h100 > * {
@@ -264,6 +252,11 @@ a.mega_menu_container_first {
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
+}
+
+.main_content {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 .content_img {
@@ -338,12 +331,12 @@ a.mega_menu_container_first {
     text-decoration: underline;
 }
 
-.content_pager a.pager_left {
+.content_pager .pager_left {
     position: relative;
     padding-right: 10px;
 }
 
-a.pager_left:before {
+.pager_left:before {
     display: inline-block;
     position: absolute;
     right: 0;
@@ -351,12 +344,12 @@ a.pager_left:before {
     content: ">";
 }
 
-.content_pager a.pager_right {
+.content_pager .pager_right {
     position: relative;
     padding-left: 10px;
 }
 
-a.pager_right:before {
+.pager_right:before {
     display: inline-block;
     position: absolute;
     left: 0;
@@ -482,7 +475,7 @@ a.pager_right:before {
     padding-left: 0;
 }
 
-.pagenavi_company .prev:hover {
+.prev:hover {
     text-decoration: underline;
 }
 
@@ -533,16 +526,6 @@ a.pager_right:before {
     font-size: 11px;
 }
 
-.pagenavi_info li a:before {
-    display: inline-block;
-    position: absolute;/* リンクの範囲広げるため */
-    width: 10px;
-    left: 0;
-    color: #8b8a8a;
-    font-weight: normal;
-    content: ">";
-}
-
 .pagenavi_info li a {
     display: block;
     padding-left: 15px;
@@ -551,6 +534,16 @@ a.pager_right:before {
 
 .pagenavi_info a:hover {
     text-decoration: underline;
+}
+
+.pagenavi_info li a:before {
+    display: inline-block;
+    position: absolute;/* リンクの範囲広げるため */
+    width: 10px;
+    left: 0;
+    color: #8b8a8a;
+    font-weight: normal;
+    content: ">";
 }
 
 .pagenavi_info .bold {
@@ -580,7 +573,7 @@ a.pager_right:before {
     font-size: 11px;
 }
 
-.footer_link a:hover {
+.pagefoot .footer_link a:hover {
     text-decoration: underline;
 }
 
