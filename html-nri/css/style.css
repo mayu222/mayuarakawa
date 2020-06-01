@@ -80,6 +80,7 @@ header {
     width: 24px;
     box-sizing: border-box;
 }
+.humberger
 
 .humberger:hover {
     opacity: 0.5;
@@ -506,15 +507,12 @@ a.mega_menu_container_first {
 /* link_bottom */
 .pagenavi_info {
     display: flex;
-    flex-wrap: wrap;
-    /* 要素の横並び、子要素にwidth指定すると折り返される */
-    width: 92%;
-    margin: 0 auto;
+    justify-content: center;
+    
 }
 
 .pagenavi_info ul {
     width: 270px;
-    /* width指定で一行で収まらないと下に改行される */
     padding: 20px;
 }
 
@@ -546,7 +544,7 @@ a.mega_menu_container_first {
     content: ">";
 }
 
-.pagenavi_info .bold {
+.pagenevi_info .bold {
     margin-bottom: 15px;
 }
 
