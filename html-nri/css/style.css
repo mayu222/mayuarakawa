@@ -1,0 +1,625 @@
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #0251a0;
+}
+
+ul {
+    padding: 0;
+}
+
+/* グローバルメニュー */
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    min-width: 1000px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.nri_logo {
+    padding-top: 5px;
+    padding-left: 180px;
+}
+
+.top_navi {
+    display: flex;
+}
+
+.top_navi > div {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    vertical-align: top;
+}
+
+.inner_navi > div > a {
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+.top_navi a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.top_navi a:hover {
+    border-bottom: 2px solid #282792;
+    color: #282792;
+}
+
+.top_navi img {
+    vertical-align: baseline;
+}
+
+.inner_navi {
+    padding-right: 180px;
+}
+
+.inner_navi a {
+    padding: 0 5px;
+}
+
+.item > div {
+    display: inline-block;
+    margin: 0 10px;
+    padding-right: 10px;
+}
+
+.item a:hover {
+    opacity: 0.5;
+    border-style: none;
+}
+
+/* ハンバーガー */
+.hamburger a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 20px;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.hamburger a:before, .hamburger a:after {
+    content: "";
+    display: block;
+    width: 20px;
+}
+
+.hamburger a:before {
+    position: absolute;
+    height: 6px;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.hamburger a:after {
+    border-top: 2px solid #000000;
+}
+
+.hamburger a:hover {
+    opacity: 0.5;
+}
+
+.topicpath {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 320px;
+}
+
+.topicpath * {
+    color: #8b8a8a;
+}
+
+/* ドロップダウンメニュー */
+.insite_contents, .news_contetns, .companyinfo_contents, .sustainable_contents {
+    height: 260px;
+}
+
+.solutuion_contents, .stock_contents {
+    height: 350px;
+}
+
+.insite_contents {
+    background-image: url(../css/images/insite_contents.png);
+}
+
+.solutuion_contents {
+    background-image: url(../css/images/solutuion_contents.png);
+}
+
+.sustainable_contents {
+    background-image: url(../css/images/sustainable_contents.jpg);
+}
+
+.news_contetns {
+    background-image: url(../css/images/news_contetns.jpg);
+}
+
+.companyinfo_contents {
+    background-image: url(../css/images/companyinfo_contents.jpg);
+}
+
+.stock_contents {
+    background-image: url(../css/images/stock_contents.jpg);
+}
+
+.mega_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    width: 90%;
+    margin: 0 auto;
+    background-position: center;
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.top_navi .inner_navi div:hover div.mega_menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mega_menu a {
+    display: inline-block;
+    border: #c9c6c69a solid 1px;
+    box-sizing: border-box;
+}
+
+.mega_menu_container {
+    display: flex;
+    justify-content: start;
+    width: 92%;
+    background-color: #ffffff;
+}
+
+.mega_menu_container a:hover {
+    background-color: #282792;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.mega_menu_container .row_1 {
+    height: 70px;
+    margin-bottom: 90px;
+}
+
+.mega_menu_container .row_2 {
+    height: 140px;
+}
+
+.mega_menu_container .row_3 {
+    height: 210px;
+}
+
+a.mega_menu_container_first {
+    font-size: 22px;
+}
+
+.block {
+    width: 80%;
+}
+
+.block a {
+    display: block;
+    line-height: 70px;
+}
+
+.block a:before {
+    padding: 10px;
+    color: #8b8a8a;
+    content: ">";
+}
+
+.child_h100 > * {
+    height: 100%;
+}
+
+.child_h50 > * {
+    height: 70px;
+}
+
+.sharebutton {
+    width: 840px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: right;
+}
+
+.sharebutton > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sharebutton a {
+    padding-left: 20px;
+}
+
+.sharebutton p {
+    font-size: 10px;
+}
+
+.main_image {
+    background-image: url(../css/images/top_main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.main_content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 810px;
+    margin: 0 auto;
+    line-height: 2.0;
+}
+
+.content_img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../css/images/bg-heading-h2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content h2 {
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.content > p {
+    line-height: 1.8;
+}
+
+.content .document img {
+    width: 96%;
+    margin-top: 25px;
+}
+
+.document .document_pdf {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.document .document_pdf a {
+    display: inline-block;
+    padding: 23px;
+    position: relative;
+    background-color: #065aaf;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.document_pdf a:hover {
+    opacity: 0.8;
+}
+
+.document_pdf a:before {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    color: #ffffff;
+    content: ">";
+}
+
+.img_text p:last-child {
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.img_text {
+    padding: 30px 0 0 470px;
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+.content_pager {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.content_pager a:hover {
+    text-decoration: underline;
+}
+
+.content_pager .pager_left {
+    position: relative;
+    padding-right: 10px;
+}
+
+.pager_left:before {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    color: #000000;
+    content: ">";
+}
+
+.content_pager .pager_right {
+    position: relative;
+    padding-left: 10px;
+}
+
+.pager_right:before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    color: #000000;
+    content: "<";
+}
+
+.content_pager .pager_right:hover {
+    text-decoration: underline;
+}
+
+.content_pager .pager_left:hover {
+    text-decoration: underline;
+}
+
+/* springboard */
+.springboard {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    border: rgba(205, 226, 247, 0.87) 1px solid;
+    background-color: rgba(215, 231, 247, 0.87);
+}
+
+.springboard p {
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.springboard .springboard_link a:hover {
+    background-color: #f5f4f4;
+}
+
+.springboard_link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0px;
+}
+
+.springboard_link a {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    padding: 20px 0;
+    border: #c9c6c69a 1px solid;
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.springboard_link .center {
+    text-align: center;
+}
+
+.springboard_link a span {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.springboard_link a span:first-child {
+    color: #aaa;
+}
+
+/* link_middle */
+.pagenavi_company {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-top: #777777 2px solid;
+    box-sizing: border-box;
+}
+
+.pagenavi_company_link {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+
+.pagenavi_company_link a {
+    /* chromeだとhover時アンダーラインの挙動がおかしい
+    そのための処置 ↓ */
+    padding-bottom: 0.1px;
+}
+
+.pagenavi_company_link a:hover {
+    text-decoration: underline;
+    /* chromeだとhover時アンダーラインの挙動がおかしい
+    そのための処置 ↓ */
+    display: inline-block;
+}
+
+.pagenavi_company h3 {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.pagenavi_company_link li, .prev li {
+    list-style-type: none;
+    position: relative;
+    width: 200px;
+    padding: 15px;
+}
+
+.pagenavi_company_link a:before {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    left: 0;
+    color: #8b8a8a;
+    content: ">";
+}
+
+.prev a:before {
+    display: inline-block;
+    width: 10px;
+    left: 0;
+    color: #8b8a8a;
+    font-size: 11px;
+    content: "<";
+}
+
+.pagenavi_company nav, .prev {
+    padding: 10px 0;
+    border-top: #cfcfcf 1px dotted;
+}
+
+.pagenavi_company .prev {
+    margin-bottom: 30px;
+    padding-top: 50px;
+    font-size: 11px;
+}
+
+.prev li {
+    padding-left: 0;
+}
+
+.prev:hover {
+    text-decoration: underline;
+}
+
+.follow_us {
+    margin: 0 auto;
+    padding: 30px;
+    border-top: #8b8a8a 2px solid;
+    border-bottom: #8b8a8a 2px solid;
+    text-align: center;
+}
+
+.follow_us h3 {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+    padding-right: 20px;
+}
+
+.follow_us .follow_button {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.follow_us .follow_button a {
+    padding: 0 15px;
+}
+
+/* link_bottom */
+.pagenavi_info {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pagenavi_info ul {
+    width: 270px;
+    padding: 20px;
+}
+
+.pagenavi_info li {
+    list-style-type: none;
+    position: relative;
+    line-height: 2.5;
+    padding-bottom: 5px;
+    font-size: 11px;
+}
+
+.pagenavi_info li a {
+    display: block;
+    padding-left: 15px;
+    color: #5c5b5b;
+}
+
+.pagenavi_info a:hover {
+    text-decoration: underline;
+}
+
+.pagenavi_info li a:before {
+    display: inline-block;
+    position: absolute;/* リンクの範囲広げるため */
+    width: 10px;
+    left: 0;
+    color: #8b8a8a;
+    font-weight: normal;
+    content: ">";
+}
+
+.pagenevi_info .bold {
+    margin-bottom: 15px;
+}
+
+.pagenavi_info .bold a {
+    font-weight: bold;
+    font-size: 12px;
+    color: #3d3c3c;
+}
+
+/* フッター */
+.pagefoot {
+    border-top: #cfcfcf 1px solid;
+}
+
+.pagefoot .footer_link {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.pagefoot .footer_link a {
+    padding: 0 10px;
+    border-right: #8b8a8a 1px solid;
+    color: #bebdbd;
+    font-size: 11px;
+}
+
+.pagefoot .footer_link a:hover {
+    text-decoration: underline;
+}
+
+.footer_link a:first-child {
+    padding-left: 0;
+}
+
+.pagefoot a:nth-child(7) {
+    border-right: none;
+}
+
+#copyright {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 10px;
+}
