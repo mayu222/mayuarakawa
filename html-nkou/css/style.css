@@ -1,9 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;500;700&display=swap");
 
 body * {
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: "M PLUS 1p","Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
     font-weight: 100;
+    font-size: 13px;
     padding-left: 0;
 }
 
@@ -24,6 +30,7 @@ ul li {
 
 .navi_container {
     width: 1050px;
+    min-width: 1050px;
     margin: 0 auto;
 }
 
@@ -41,16 +48,18 @@ ul li {
 }
 
 .fixed_header {
+    min-width: 1050px;
     position: relative;
     z-index: 2;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .fix_menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: fixed;
     width: 100%;
+    min-width: 1050px;
     height: 60px;
     top: 0;
     z-index: 1;
@@ -71,27 +80,35 @@ ul li {
     align-items: center;
 }
 
+.fixed li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.fixed li:nth-child(2) {
+    font-size: 10px;
+    color: #666666;
+}
+
 .fixed li a {
     display: block;
     width: 180px;
     text-align: center;
-    color: #20286F;
+    color: #20286f;
     font-size: 11px;
     font-weight: bold;
     line-height: 2.5;
-    border: solid 1px #20286F;
+    border: solid 1px #20286f;
     background: url(images/icon_arrow01_right_blue01.png) no-repeat 160px;
     background-size: 5px;
 }
 
 .fixed li a:hover {
-    background: #20286F;
-    color: #fff;
-}
-
-.fixed li {
-    display: inline-block;
-    padding: 5px;
+    background-color: #20286f;
+    background-image: url(../css/images/icon_arrow01_right_white01.png);
+    background-repeat: no-repeat;
+    background-position: 160px;
+    color: #ffffff;
 }
 
 .head_link_list {
@@ -101,7 +118,7 @@ ul li {
 
 .head_link_list li {
     padding: 0 5px;
-    border-right: 1px solid #666;
+    border-right: 1px solid #666666;
 }
 
 .head_link_list li a {
@@ -113,7 +130,7 @@ ul li {
 .head_link_list li:last-child a {
     display: inline-block;
     background-color: #d9d9d9;
-    color: #1F2874;
+    color: #1f2874;
 }
 
 .head_link_list li:last-child a::before {
@@ -143,14 +160,6 @@ ul li {
     padding-right: 30px;
 }
 
-.sns {
-    padding-right: 25px;
-}
-
-.sns a:hover {
-    opacity: 0.6;
-}
-
 .school_menu a {
     font-weight: 400;
 }
@@ -165,20 +174,20 @@ ul li {
 
 .school_menu li:first-child {
     border-left: 1px solid #cecece;
-    color: #1F2874;
+    color: #1f2874;
 }
 
 .school_menu ul li a:hover {
-    color: #1F2874;
+    color: #1f2874;
     text-decoration: none;
 }
 
 .school_menu ul li a:hover .text_color {
-    color: #1F2874;
+    color: #1f2874;
 }
 
 .school_menu .text_color {
-    color: #aaa;
+    color: #aaaaaa;
 }
 
 .info a {
@@ -193,8 +202,8 @@ ul li {
 }
 
 .info a:hover {
-    color: #fff;
-    background: #1F2874 url(../css/images/icon_arrow01_right_white01.png) no-repeat;
+    color: #ffffff;
+    background: #1f2874 url(../css/images/icon_arrow01_right_white01.png) no-repeat;
     background-position: 150px;
     background-size: 5px;
     text-decoration: none;
@@ -202,13 +211,15 @@ ul li {
 
 .table_of_contents {
     position: relative;
+    min-width: 1050px;
     padding: 10px;
     background-color: #181936;
 }
 
 .table_of_contents:before {
-    content: '';
+    content: "";
     position: absolute;
+    z-index: 2;
     left: 250px;
     top: -5px;
     border-right: 15px solid transparent;
@@ -227,14 +238,14 @@ ul li {
 .table_of_contents li a {
     display: inline-block;
     padding: 8px;
-    color: #fff;
+    color: #ffffff;
     font-size: 11px;
     letter-spacing: 0.8px;
 }
 
 .table_of_contents li a:hover {
     color: #31419e;
-    background-color: #fff;
+    background-color: #ffffff;
     transition: 0.3s;
 }
 
@@ -255,7 +266,7 @@ ul li {
     background-image: url(../css/images/about_mainimage01.jpg);
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #ffffff;
 }
 
 .nkou_title {
@@ -279,7 +290,7 @@ ul li {
     display: block;
     width: 200px;
     margin: 0 auto;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
 }
 
 .nkou_title p {
@@ -339,7 +350,7 @@ ul li {
     width: 610px;
     margin: 0 auto;
     padding-top: 15px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 22px;
     text-align: left;
 }
@@ -361,7 +372,7 @@ ul li {
     height: 10px;
     background-image: url(../css/images/line02_black01.png);
     background-repeat: no-repeat;
-    background-position: left
+    background-position: left;
 }
 
 .direction_point_text {
@@ -428,7 +439,11 @@ ul li {
 }
 
 .school_point .text {
-    width: 50%;
+    width: 470px;
+}
+
+.text_height {
+    line-height: 1.5;
 }
 
 .text p:first-child {
@@ -436,6 +451,7 @@ ul li {
     font-size: 20px;
     border-bottom: 1px solid #181936;
 }
+
 .program_title {
     font-size: 18px;
     font-weight: 400;
@@ -470,16 +486,18 @@ ul li {
     display: block;
     width: 15%;
     margin: 0 auto;
-    border-top: 1px solid #000;
+    border-top: 1px solid #000000;
 }
 
 .heading:nth-child(odd), .other_topics {
     border: 1px solid #c9c9c9;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 }
 
 .heading > p {
     text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .flex a {
@@ -493,11 +511,9 @@ ul li {
 }
 
 .program_white {
-    width: 110px;
-    padding-top: 3px;
-    text-align: center;
-    background-color: #000;
-    border: 1px solid #000;
+    display: inline-block;
+    padding: 3px;
+    background-color: #000000;
 }
 
 .read_more {
@@ -546,8 +562,8 @@ ul li {
     height: 70px;
     margin: 7px;
     padding: 18px;
-    border: solid 1px #fff;
-    background: #fff url(images/icon_arrow01_right_black01.png) no-repeat 400px;
+    border: solid 1px #ffffff;
+    background: #ffffff url(images/icon_arrow01_right_black01.png) no-repeat 400px;
     background-size: 5px;
 }
 
@@ -560,7 +576,7 @@ ul li {
 }
 
 .nkou_info {
-    color: #fff;
+    color: #ffffff;
     height: 230px;
     background-image: url(images/footer02_bg01.png);
 }
@@ -598,10 +614,10 @@ ul li {
     margin: 10px;
     padding-top: 5px;
     text-align: left;
-    border: solid 1px #000;
-    color: #000;
+    border: solid 1px #000000;
+    color: #000000;
     font-size: 13px;
-    background: #fff url(../css/images/icon_arrow01_right_black01.png) no-repeat 220px;
+    background: #ffffff url(../css/images/icon_arrow01_right_black01.png) no-repeat 220px;
     background-size: 5px;
 }
 
@@ -644,7 +660,7 @@ ul li {
     display: inline-block;
     margin: 0 auto;
     width: 180px;
-    color: #fff;
+    color: #ffffff;
     background: url(../css/images/icon_arrow01_right_white01.png) no-repeat 160px;
     background-size: 4px;
 }
@@ -669,23 +685,23 @@ ul li {
     width: 110px;
     margin: 15px;
     padding: 15px 70px;
-    border: 1px solid #000;
-    background:url(../css/images/icon_arrow01_right_black01.png) no-repeat 235px;
+    border: 1px solid #000000;
+    background: url(../css/images/icon_arrow01_right_black01.png) no-repeat 235px;
     background-size: 5px;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
 .news a:hover {
-    color: #fff;
-    background: #000 url(../css/images/icon_arrow01_right_white01.png) no-repeat 235px;
+    color: #ffffff;
+    background: #000000 url(../css/images/icon_arrow01_right_white01.png) no-repeat 235px;
     background-size: 5px;
 }
 
 .journal a {
     margin: 20px;
     padding: 10px 80px;
-    border: solid 1px #000;
+    border: solid 1px #000000;
 }
 
 .link_button {
@@ -705,7 +721,7 @@ ul li {
     width: 500px;
     padding: 10px 0;
     text-align: center;
-    background: #fff url(../css/images/icon_arrow01_right_black01.png) no-repeat 480px;
+    background: #ffffff url(../css/images/icon_arrow01_right_black01.png) no-repeat 480px;
     background-size: 5px;
 }
 
@@ -741,7 +757,7 @@ ul li {
 
 .footer_info li a {
     font-weight: bold;
-    color: #20286F;
+    color: #20286f;
     letter-spacing: 1px;
 }
 
@@ -778,6 +794,7 @@ ul li {
 .footer_link_flex {
     display: flex;
     margin: 20px 0;
+    line-height: 1.5;
 }
 
 .footer_link_flex > * {
@@ -789,11 +806,11 @@ ul li {
 }
 
 .footer_link_flex ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer_link_flex ul li a {
-    font-size: 10px;
+    font-size: 11px;
     color: #272727;
     font-weight: 400;
 }
@@ -805,7 +822,22 @@ ul li {
 .footer_link_flex ul li:first-child a {
     font-size: 12px;
     font-weight: bold;
-    color: #20286F;
+    color: #20286f;
+}
+
+.font_small {
+    font-size: 11px;
+}
+
+.font_color {
+    font-size: 11px;
+    font-weight: 400;
+    color: #272727;
+}
+
+.footer_link_flex ul li:last-child a {
+    font-weight: 400;
+    color: #272727;
 }
 
 .link_block {
@@ -838,6 +870,7 @@ ul li {
 
 .privacy li a {
     font-size: 10px;
+    font-weight: 400;
     color: #242323;
 }
 
@@ -845,46 +878,49 @@ ul li {
     text-decoration: underline;
 }
 
-
-.sns li {
-    border-left: 1px solid #c9c9c9;
+.sns li a {
+    border-left: 1px solid #e7e3e3;
     padding-left: 5px;
+}
+
+.sns li:first-child a {
+    border-left: none;
 }
 
 .sns li a {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 0 15px;
+    padding-right: 0;
     font-size: 10px;
+}
+
+.sns li a::after {
+    margin-left: 10px;
+    content: ">";
+    display: inline-block;
 }
 
 .sns li a:hover {
     opacity: 0.5;
-    color: #000;
+    color: #000000;
     background-color: #c4c4c4;
 }
 
 .sns a span {
     display: inline-block;
-    padding: 5px;
+    padding: 10px 10px 10px 5px;
+    vertical-align: middle;
 }
 
 .sns a img {
-    vertical-align: text-bottom;
-}
-
-.sns li a::after {
-    content: ">";
-}
-
-.sns li:first-child {
-    border-left: none;
+    vertical-align: middle;
 }
 
 .footer_navi {
-    background-color: #000;
+    background-color: #000000;
 }
 
-.footer_end {    
+.footer_end {
     display: flex;
     justify-content: space-between;
     width: 1050px;
@@ -896,4 +932,5 @@ ul li {
 
 .footer_end a {
     color: #c1c1c1;
+    font-size: 10px;
 }
