@@ -238,7 +238,7 @@ ul li {
     content: "";
     position: absolute;
     z-index: 2;
-    left: 250px;
+    left: 498px;
     top: -5px;
     border-right: 15px solid transparent;
     border-bottom: 15px solid #181936;
@@ -318,17 +318,16 @@ ul li {
 }
 
 .topicpath {
-    padding-left: 100px;
     padding: 20px;
     border-bottom: 1px solid #e6e2e2;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 1px;
 }
 
 .topicpath a {
-    padding-left: 180px;
+    padding-left: 400px;
     color: #31419e;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 1px;
 }
 
@@ -628,31 +627,33 @@ ul li {
 }
 
 .info_data a {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 240px;
     height: 50px;
-    margin: 10px;
+    margin: 15px;
     padding-top: 5px;
     text-align: left;
     border: solid 1px #000000;
     color: #000000;
-    font-size: 13px;
+    font-size: 14px;
+    letter-spacing: 1px;
     background: #ffffff url(../css/images/icon_arrow01_right_black01.png) no-repeat 220px;
     background-size: 5px;
 }
 
 .info_data a::before {
     display: inline-block;
-    width: 20px;
-    height: 35px;
+    width: 10px;
+    height: 25px;
     padding: 2px 20px;
-    margin-left: 10px;
+    margin-left: 15px;
     content: "";
     vertical-align: middle;
 }
 
 .info_data a:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .book_icon a::before {
