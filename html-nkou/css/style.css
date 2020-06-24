@@ -22,6 +22,24 @@ ul li {
     list-style-type: none;
 }
 
+.fit_1 {
+    object-fit: cover;
+    width: 490px;
+    height: 450px;
+}
+
+.fit_2 {
+    object-fit: cover;
+    width: 480px;
+    height: 400px;
+}
+
+.fit {
+    object-fit: cover;
+    width: 720px;
+    height: 500px;
+}
+
 .head_link, .navi_container, .header_logo, .school_menu {
     display: flex;
     justify-content: space-between;
