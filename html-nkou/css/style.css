@@ -234,23 +234,23 @@ ul li {
     background-color: #181936;
 }
 
-.table_of_contents:before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    left: 498px;
-    top: -5px;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid #181936;
-    border-left: 15px solid transparent;
-}
-
 .table_of_contents ul {
+    position: relative;
     flex-wrap: wrap;
     width: 1030px;
     margin: 0 auto;
     text-align: center;
     font-size: 12px;
+}
+.table_of_contents ul::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 5%;
+    top: -15px;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #181936;
+    border-left: 15px solid transparent;
 }
 
 .table_of_contents li a {
