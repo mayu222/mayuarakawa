@@ -389,7 +389,9 @@ ul li {
 
 .direction_point_text p span {
     display: inline-block;
-    height: 35px;
+    text-align-last: justify;
+    width: 60px;
+    height: 30px;
     border-right: 1px solid #181936;
     padding-right: 10px;
     margin-right: 10px;
