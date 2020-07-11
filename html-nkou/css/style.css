@@ -167,8 +167,19 @@ ul li {
     margin-top: 30px;
 }
 
+.header_item {
+    display: flex;
+    align-items: baseline;
+}
+
 .header_tel {
-    padding-right: 30px;
+    padding-right: 25px;
+}
+
+.header_tel p {
+    margin-top: 3px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .school_menu a {
@@ -920,6 +931,7 @@ ul li {
 
 .sns a img {
     vertical-align: middle;
+    margin: 0 2px;
 }
 
 .footer_navi {
