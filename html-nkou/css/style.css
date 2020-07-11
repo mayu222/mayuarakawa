@@ -1,13 +1,6 @@
-
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;500;700&display=swap");
-
 body * {
-    font-family: "M PLUS 1p","Helvetica Neue",
-        Arial,
-        "Hiragino Kaku Gothic ProN",
-        "Hiragino Sans",
-        Meiryo,
-        sans-serif;
+    font-family: "M PLUS 1p", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     font-weight: 100;
     font-size: 13px;
     padding-left: 0;
@@ -162,7 +155,7 @@ ul li {
     vertical-align: middle;
 }
 
-.head_link_list li:nth-child(n + 6) {
+.head_link_list li:nth-child(n+6) {
     border-right: none;
 }
 
@@ -242,6 +235,7 @@ ul li {
     text-align: center;
     font-size: 12px;
 }
+
 .table_of_contents ul::before {
     content: "";
     position: absolute;
@@ -519,16 +513,6 @@ ul li {
     line-height: 1.5;
 }
 
-.flex a {
-    display: inline-block;
-    width: 30%;
-    height: 50%;
-}
-
-.flex a:hover {
-    opacity: 0.7;
-}
-
 .program_white {
     display: inline-block;
     padding: 3px;
@@ -600,14 +584,14 @@ ul li {
     background-image: url(images/footer02_bg01.png);
 }
 
-.nkou_info > h3 {
+.nkou_info>h3 {
     padding-top: 30px;
     font-size: 15px;
     letter-spacing: 2px;
     text-align: center;
 }
 
-.nkou_info > p {
+.nkou_info>p {
     padding-top: 25px;
     text-align: center;
     font-size: 15px;
@@ -677,6 +661,7 @@ ul li {
     text-align: center;
     border: 1px solid;
 }
+
 .web_contact a {
     display: inline-block;
     margin: 0 auto;
@@ -729,7 +714,7 @@ ul li {
     padding: 30px;
 }
 
-.link_button > p {
+.link_button>p {
     text-align: center;
     font-size: 16px;
     line-height: 2;
@@ -790,13 +775,13 @@ ul li {
     padding-left: 0;
 }
 
-.footer_info > ul li {
+.footer_info>ul li {
     display: inline-block;
     padding: 0 10px;
     border-left: 1px solid;
 }
 
-.footer_info > ul li:first-child {
+.footer_info>ul li:first-child {
     border-left: none;
     padding-left: 0;
 }
@@ -818,7 +803,7 @@ ul li {
     line-height: 1.5;
 }
 
-.footer_link_flex > * {
+.footer_link_flex>* {
     width: 20%;
 }
 
