@@ -14,6 +14,9 @@ a {
 ul li {
     list-style-type: none;
 }
+img {
+    vertical-align: middle;
+}
 
 .fit_1 {
     object-fit: cover;
@@ -490,7 +493,7 @@ ul li {
 }
 
 .intro_flex a {
-    margin: 30px;
+    margin: 0 30px;
 }
 
 .intro_flex p {
