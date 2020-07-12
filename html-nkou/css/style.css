@@ -6,6 +6,10 @@ body * {
     padding-left: 0;
 }
 
+p {
+    font-size: 16px;
+}
+
 a {
     text-decoration: none;
     color: #535353;
@@ -129,6 +133,7 @@ img {
 }
 
 .head_link_list {
+    display: inline-table;
     margin: 0;
     font-size: 11px;
 }
@@ -165,9 +170,14 @@ img {
     border-right: none;
 }
 
-.head_link_list li, .header_tel, .sns, .school_menu li, .info a, .table_of_contents li {
+.head_link_list li, .header_tel, .school_menu li, a, .table_of_contents li {
     display: inline-block;
 }
+
+.sns, .info, .school_menu_list {
+    display: flex;
+}
+
 
 .header_logo {
     margin-top: 30px;
@@ -379,7 +389,7 @@ img {
     width: 610px;
     margin: 0 auto;
     padding-top: 15px;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 22px;
     text-align: left;
 }
