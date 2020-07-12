@@ -42,6 +42,10 @@ img {
     align-items: center;
 }
 
+.school_logo img {
+    width: auto;
+}
+
 .navi_container {
     width: 1050px;
     margin: 0 auto;
