@@ -126,7 +126,7 @@ img {
 
 .fixed li a:hover {
     background-color: #20286f;
-    background-image: url(../css/images/icon_arrow01_right_white01.png);
+    background-image: url(./images/icon_arrow01_right_white01.png);
     background-repeat: no-repeat;
     background-position: 160px;
     color: #ffffff;
@@ -340,10 +340,14 @@ img {
 }
 
 .topicpath {
+    display: flex;
     padding: 20px;
     border-bottom: 1px solid #e6e2e2;
     font-size: 12px;
     letter-spacing: 1px;
+}
+.topicpath li:first-child::after {
+    content: ">";
 }
 
 .topicpath a {
