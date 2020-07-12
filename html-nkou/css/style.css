@@ -176,6 +176,7 @@ img {
 .header_item {
     display: flex;
     align-items: baseline;
+    margin: 3px;
 }
 
 .header_tel {
@@ -183,7 +184,7 @@ img {
 }
 
 .header_tel p {
-    margin-top: 3px;
+    margin-top: 5px;
     text-align: center;
     font-size: 12px;
 }
