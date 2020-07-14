@@ -166,7 +166,7 @@ img {
     vertical-align: middle;
 }
 
-.head_link_list li:nth-child(n+6) {
+.head_link_list li:last-child {
     border-right: none;
 }
 
@@ -483,6 +483,10 @@ img {
     background-position: 0 5px;
 }
 
+.read_more_01 img, .read_more img {
+    vertical-align: top;
+}
+
 .school_point .text {
     width: 470px;
 }
@@ -555,7 +559,7 @@ img {
     padding-left: 10px;
     background: url(images/icon_arrow01_right_black01.png) no-repeat;
     background-size: 5px;
-    background-position: 0 5px;
+    background-position: 0 3px;
 }
 
 .what_nkou {
