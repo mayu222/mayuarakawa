@@ -58,6 +58,7 @@ nav {
 .navi_container {
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 8px;
 }
 
 .navi_container a:hover {
@@ -186,7 +187,7 @@ nav {
 
 
 .header_logo {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .header_item {
@@ -200,7 +201,7 @@ nav {
 }
 
 .header_tel p {
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     text-align: center;
     font-size: 12px;
 }
