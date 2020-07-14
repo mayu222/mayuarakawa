@@ -18,8 +18,13 @@ a {
 ul li {
     list-style-type: none;
 }
+
 img {
     vertical-align: middle;
+}
+
+nav {
+    flex-basis: 620px;
 }
 
 .fit_1 {
@@ -168,6 +173,7 @@ img {
 
 .head_link_list li:last-child {
     border-right: none;
+    padding: 0;
 }
 
 .head_link_list li, .header_tel, .school_menu li, a, .table_of_contents li {
